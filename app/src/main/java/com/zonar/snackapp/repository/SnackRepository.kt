@@ -16,6 +16,29 @@ class SnackRepository private constructor(context: Context) {
 
     fun getSnack(id: UUID): LiveData<Snack?> = getSnackDummy(id)
 
+    //TODO here should be an implementation of a network service for download/upload data
+    // inastead of 'getSnacksDummy()'
+    // something like this:
+
+//    val retrofit: Retrofit = Retrofit.Builder()
+//        .baseUrl("https://www.snack.com/")
+//        .addConverterFactory(ScalarsConverterFactory.create())
+//        .build()
+//
+//    val snackApi: SnackApi = retrofit.create(SnackApi::class.java)
+//    val snackHomePageRequest: Call<String> = snackApi.fetchContents()
+//
+//    snackHomePageRequest.enqueue(object: Callback<String> {
+//        override fun onFailure(call: Call<String>, t: Throwable) {
+//            Log.e(TAG,"Failed to fetch snacks ", t)
+//        }
+//
+//        override fun onResponse(call: Call<String>, response: Response<String>) {
+//            Log.d(TAG, "Response received: ${response.body()}")
+//        }
+//
+//    })
+
     fun updateSnack(snack: Snack) {
         // TODO
     }
