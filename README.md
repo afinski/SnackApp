@@ -3,6 +3,7 @@ Imagine that you work for SnackTruck, which runs food trucks that sell a selecti
 of phones and tablets each truck can pass around, so multiple people can order snacks at once.  Your job is to write the app that will go on those order-
 taking devices.  
 This app will present a list of snacks which can be veggies [text in green color] or non-veggies [text in red color] with a checkbox:
+
 French-fries [ ]
 
 Milk-shake [ ]
